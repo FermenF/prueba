@@ -28,7 +28,7 @@ class Edit extends Component
         'model' => 'required|string',
         'year' => 'required|numeric',
         'price' => 'required|numeric',
-        'image' => 'nullable|image|mimes:jpeg,png,jpg,gif'
+        'new_image' => 'nullable|max:4096'
     ];
 
     public function mount($id)

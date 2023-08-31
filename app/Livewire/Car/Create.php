@@ -19,7 +19,7 @@ class Create extends Component
         'model' => 'required|string',
         'year' => 'required|numeric',
         'price' => 'required|numeric',
-        'image' => 'nullable'
+        'image' => 'nullable|max:4096'
     ];
 
     public function create()
